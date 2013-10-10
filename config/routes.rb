@@ -1,4 +1,9 @@
 Foodexchange::Application.routes.draw do
+  resources :users
+
+  get "welcome/index"
+  match 'register' => 'farmers#new', :as => :register
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +53,7 @@ Foodexchange::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'users#index'
 
   # See how all your routes lay out with "rake routes"
 
