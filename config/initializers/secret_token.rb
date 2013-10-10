@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Foodexchange::Application.config.secret_token = '8f4f103dca6840b4f5763a91db1a79f6ad6062eb9048f10bc4e3a77395811c61e65d80688d348eac2e58f2855a0492e8c1a9e101917f85b6856ed17b681395d2'
+Foodexchange::Application.config.secret_token = '705316989295935113c49948ceb6c727178a0325c8eaa07a6d4155fe513c046404691718746c3ea78b0acb1c13924fe382c8a68fefdd78c31e89d95d14f083f1'
