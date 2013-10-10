@@ -17,16 +17,4 @@ class User < ActiveRecord::Base
     self.password_hash = @password
   end
 
-
-	def self.authenticate(email, test_password)
-	  user = Farmer.find_by_email(email)
-	  if user && user.password == test_password
-	    user
-	  else
-	    nil
-	  end
-	end
-
-
-
 end

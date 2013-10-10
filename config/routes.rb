@@ -1,15 +1,8 @@
 Foodexchange::Application.routes.draw do
-  get "sessions/new"
-
   resources :users
 
   get "welcome/index"
-  match 'register' => 'users#new', :as => :register
-  
-  #session
-  match '/login' => 'sessions#new', :as => :login
-  match '/logout' => 'sessions#destroy', :as => :logout
-  post '/sessions/create' => 'sessions#create'
+  match 'register' => 'farmers#new', :as => :register
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
